@@ -2,22 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+<div class="col-md-12">
+<div class="jumbotron">
+  <h1>TomTim is great</h1>
+  <p class="lead">It's the future</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
+<div class="col-md-12">
+<p class="lead">Something something something...</p>
+</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<div class="col-md-4">
+Point 1
+</div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="col-md-4">
+Point 2
+</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="col-md-4">
+Point 3
 </div>
